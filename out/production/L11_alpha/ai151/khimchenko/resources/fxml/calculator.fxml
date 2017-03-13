@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import ai151.khimchenko.view.controls.OperatorButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ai151.khimchenko.controller.ArithmeticController">
+
+    <fx:include source="menu_bar.fxml" />
+    <HBox id="main_calculator" spacing="10" style="-fx-padding: 5;">
+        <VBox spacing="5" styleClass="main_panel">
+            <HBox alignment="BOTTOM_RIGHT" styleClass="result_view">
+                <HBox.margin>
+                    <Insets bottom="2" left="15" right="10" top="20" />
+                </HBox.margin>
+                <Text fx:id="resultText" style="-fx-font-size: 40" textAlignment="RIGHT" />
+            </HBox>
+            <fx:include source="binary_panel.fxml" />
+
+            <HBox>
+                <fx:include source="numeric_system_boxes.fxml" />
+                <fx:include source="programmers_panel.fxml" />
+                <GridPane fx:id="numbers" styleClass="panel">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="ALWAYS" />
+                    </columnConstraints>
+
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="MC" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="MR" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="MS" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="M+" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="M-" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="←" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="ce" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <Button fx:id="clearButton" maxHeight="Infinity" maxWidth="Infinity" onAction="#onClearButtonClicked" text="C" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="±" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="√" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="7" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                    <OperatorButton fx:id="divisionButton" maxHeight="Infinity" maxWidth="Infinity" onAction="#onOperatorButtonClicked" operator="DIVISION" text="/" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                    <OperatorButton fx:id="subtractionButton" maxHeight="Infinity" maxWidth="Infinity" onAction="#onOperatorButtonClicked" operator="SUBTRACTION" text="-" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="4" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                    <OperatorButton fx:id="multiplicationButton" maxHeight="Infinity" maxWidth="Infinity" onAction="#onOperatorButtonClicked" operator="MULTIPLICATION" text="*" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="1/X" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="1" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text=".." GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onEqualButtonClicked" text="=" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+
+                    <Button maxHeight="Infinity" maxWidth="Infinity" onAction="#onNumericButtonClicked" text="0" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                    <Button maxHeight="Infinity" maxWidth="Infinity" text="," GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                    <OperatorButton fx:id="additionButton" maxHeight="Infinity" maxWidth="Infinity" onAction="#onOperatorButtonClicked" operator="ADDITION" text="+" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+                </GridPane>
+            </HBox>
+        </VBox>
+        <fx:include source="leasing_panel.fxml" />
+    </HBox>
+</VBox>

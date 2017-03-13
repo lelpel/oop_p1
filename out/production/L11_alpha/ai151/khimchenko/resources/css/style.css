@@ -1,0 +1,31 @@
+.switches {
+    -fx-padding: 2 5 2 5;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-border-color: gray;
+}
+.binary_panel {
+    -fx-padding: 2 5 2 5;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-border-color: gray;
+    -fx-hgap: 1;
+    -fx-vgap: 1;
+}
+.result_view {
+    -fx-border-style: solid inside;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-border-color: gray;
+    -fx-padding: 25 2 6 30;
+    -fx-background-color: linear-gradient(to bottom, #d3eefb 0%, #f4f8f9 59%);
+}
+.panel {
+    -fx-padding: 2 10 4 10;
+    -fx-vgap: 6;
+    -fx-hgap: 6;
+}
+
+.main_panel {
+    -fx-background-color: #EDF0F2;
+}

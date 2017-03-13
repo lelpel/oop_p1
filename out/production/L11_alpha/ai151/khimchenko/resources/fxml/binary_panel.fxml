@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--ДВОИЧНЫЙ ВЫВОД-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane styleClass="binary_panel" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.112">
+    <GridPane.margin>
+        <Insets top="2" right="10" bottom="5" left="10"/>
+    </GridPane.margin>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+    </columnConstraints>
+
+    <Label text="0000" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Label text="0000" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label text="0000" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+    <Label text="0000" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+    <Label text="0000" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+    <Label text="0000" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+    <Label text="0000" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+    <Label text="0000" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+
+    <Label text="63" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label text="63" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+    <Label text="63" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+
+    <Label text="0000" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label text="0000" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Label text="0000" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <Label text="0000" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <Label text="0000" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+    <Label text="0000" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+    <Label text="0000" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+    <Label text="0000" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+
+    <Label text="31" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <Label text="15" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+    <Label text="0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

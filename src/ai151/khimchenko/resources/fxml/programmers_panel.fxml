@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane style="-fx-padding: 2 10 4 10" hgap="6" vgap="6">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" disable="true" text=" " GridPane.columnIndex="0"
+            GridPane.rowIndex="0"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="Mod" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="A" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="(" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text=")" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="B" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="RoL" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="RoR" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="C" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="Or" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="Xor" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="D" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="Lsh" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="Rsh" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="E" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="Not" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="And" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Button maxHeight="Infinity" maxWidth="Infinity" text="F" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+</GridPane>

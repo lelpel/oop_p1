@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import ai151.khimchenko.view.controls.TextFieldWithCaption?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.112">
+    <Text text="Выберите значение для вычисления" />
+    <ChoiceBox value="Первоначльный платеж">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Первоначльный платеж" />
+                <String fx:value="Ежемесячный платеж" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+
+    <TextFieldWithCaption title="Стоимость аренды" />
+    <TextFieldWithCaption title="Срок аренды" />
+    <TextFieldWithCaption title="Годовые выплаты" />
+    <TextFieldWithCaption title="Остаточная стоимость" />
+    <TextFieldWithCaption title="Процентная ставка" />
+
+    <Button prefHeight="30.0" prefWidth="200.0" text="Рассчитать" />
+</VBox>

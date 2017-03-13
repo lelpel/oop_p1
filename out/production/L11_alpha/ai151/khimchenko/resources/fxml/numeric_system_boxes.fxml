@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="num_sys_panel" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <fx:define>
+        <ToggleGroup fx:id="numSys" />
+        <ToggleGroup fx:id="wordLength" />
+    </fx:define>
+
+    <!--Системы счисления-->
+    <VBox styleClass="switches">
+        <VBox.margin>
+            <Insets bottom="2" left="10" right="5" top="5" />
+        </VBox.margin>
+
+        <RadioButton text="Hex">
+         <toggleGroup>
+            <ToggleGroup fx:id="numSysBox" />
+         </toggleGroup></RadioButton>
+        <RadioButton selected="true" text="Dec" toggleGroup="$numSysBox" />
+        <RadioButton text="Oct" toggleGroup="$numSysBox" />
+        <RadioButton text="Bin" toggleGroup="$numSysBox" />
+    </VBox>
+
+    <!--Длина машинного слова-->
+    <VBox styleClass="switches">
+        <VBox.margin>
+            <Insets bottom="2" left="10" right="5" top="5" />
+        </VBox.margin>
+
+        <RadioButton selected="true" text="8 байт">
+         <toggleGroup>
+            <ToggleGroup fx:id="wordLengthBox" />
+         </toggleGroup></RadioButton>
+        <RadioButton text="4 байта" toggleGroup="$wordLengthBox" />
+        <RadioButton text="2 байта" toggleGroup="$wordLengthBox" />
+        <RadioButton text="1 байт" toggleGroup="$wordLengthBox" />
+    </VBox>
+</VBox>
